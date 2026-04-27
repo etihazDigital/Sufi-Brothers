@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sufi Brother's</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 9999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.logo-text span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: gold;
+}
+.logo h2 {
+  color: white;
+}
+
+.logo span {
+  color: white;
+}
+
+.logo span {
+  color: gold;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+.profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter', sans-serif;
+background:#0a0a0a;
+color:#fff;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display', serif;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+ 
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('https://i.postimg.cc/5N6m4B4V/tailor-web-6.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+margin-bottom:30px;
+opacity:0.8;
+}
+
+.btn{
+padding:12px 28px;
+background:#d4af37;
+color:#000;
+border:none;
+cursor:pointer;
+transition:0.3s;
+font-weight:500;
+}
+
+.btn:hover{
+background:#fff;
+}
+
+/* SECTION */
+section{
+padding:80px 60px;
+text-align:center;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.section-sub{
+opacity:0.7;
+margin-bottom:40px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* WHY */
+.why .card{
+border:1px solid #222;
+}
+
+/* PROCESS */
+.process .step{
+margin-bottom:20px;
+}
+
+/* GALLERY */
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+font-style:italic;
+opacity:0.9;
+}
+
+/* CTA */
+.cta{
+background:#111;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+/* CONTACT */
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+font-size:14px;
+opacity:0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .top-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .nav a {
+    font-size: 11px;
+  }
+
+  .profile img {
+    width: 28px;
+    height: 28px;
+  }
+}
+.gallery-item {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  margin-top: 5px;
+  font-size: 14px;
+  color: gold;
+  font-weight: bold;
+}
+
+.trial {
+  padding: 40px 20px;
+  background: #111;
+  text-align: center;
+}
+
+.trial h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.trial-gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trial-gallery img {
+  width: 30%;
+  border-radius: 8px;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+.hero {
+  z-index: 0;
+}
+
+.contact img {
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+}
+</style>
+</head>
+
+<body>
+<header class="header">
+
+  <div class="top-row">
+
+    <div class="logo">
+      
+      <div class="logo-text">
+        <h2>Sufi Brother’s</h2>
+        <span>Bespoke Tailoring</span>
+      </div>
+    </div>
+
+    <div class="profile">
+      <img src="https://i.postimg.cc/x846kZzg/web-tailor-sufi.jpg">
+    </div>
+
+  </div>
+
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+</header>
+<!-- HERO -->
+ <h1 style="margin:0;">Sufi Brother’s</h1>
+
+     
+
+<div class="hero">
+<div class="hero-content">
+<h1>Crafted to Fit. Designed to Impress.</h1>
+<p>Experience the art of bespoke tailoring with precision, elegance, and individuality.</p>
+<a href="https://wa.me/919999999999" target="_blank">
+<button class="btn">Book Your Consultation</button>
+</a>
+
+</p>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<p class="section-sub">
+At Sufi Brother's, we redefine elegance through precision craftsmanship and personalized design. Every stitch reflects luxury, individuality, and timeless sophistication.
+</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="grid">
+<div class="card">
+<h3>Bespoke Suits</h3>
+<p>Handcrafted suits tailored perfectly to your body and style.</p>
+</div>
+<div class="card">
+<h3>Custom Shirts</h3>
+<p>Premium fabrics with flawless fitting and detailing.</p>
+</div>
+<div class="card">
+<h3>Wedding Wear</h3>
+<p>Luxury outfits designed for your most important occasions.</p>
+</div>
+<div class="card">
+<h3>Alterations</h3>
+<p>Expert adjustments ensuring the perfect final fit.</p>
+</div>
+</div>
+</section>
+
+<section class="trial">
+  <h2>Our Trial Work</h2>
+
+  <div class="trial-gallery">
+    <img src="https://i.postimg.cc/ZqrQnDSt/web-tailor-sufi-7.jpg">
+    <img src="https://i.postimg.cc/4dPFb7yB/web-tailor-sufi-8.jpg">
+    <img src="https://i.postimg.cc/N0wN37Hf/web-tailor-sufi-10.jpg">
+    <img src="https://i.postimg.cc/bY6BZtKF/web-tailor-sufi-9.jpg">
+    <img src="https://i.postimg.cc/gjhbp9pY/web-tailor-sufi-12.jpg">
+    <img src="https://i.postimg.cc/6pcJtLkY/web-tailor-sufi-11.jpg">
+
+
+
+
+  </div>
+
+</section>
+
+<!-- WHY -->
+<section class="why">
+<h2 class="section-title">Why Choose Us</h2>
+<div class="grid">
+<div class="card">Perfect Fit Guarantee</div>
+<div class="card">Premium Fabrics</div>
+<div class="card">Personalized Experience</div>
+<div class="card">Expert Craftsmanship</div>
+</div>
+</section>
+
+<!-- PROCESS -->
+ 
+<section class="process">
+<h2 class="section-title">Our Process</h2>
+<div class="grid">
+<div class="card">Consultation</div>
+<div class="card">Fabric Selection</div>
+<div class="card">Measurements</div>
+<div class="card">Final Fitting</div>
+</div>
+
+</section>
+
+<!-- GALLERY -->
+  
+
+<section id="gallery" class="gallery">
+      <marquee>Sufi Brother’s • Bespoke Tailoring • Premium Custom Suits • Contact on WhatsApp</marquee>
+
+<h2 class="section-title">Our Work</h2>
+  
+
+<div class="grid">
+
+  <div class="gallery-item">
+  <img src="https://i.postimg.cc/wjz3fzGd/tailor-web.jpg">
+  <p class="price">₹39,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/W4W31kbP/tailor-web-2.jpg">
+  <p class="price">₹40,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/85xzhg60/tailor-web-3.jpg">
+  <p class="price">₹30,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/GhwptrRV/tailor-web-4.jpg">
+  <p class="price">₹35,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/3JXxD6J6/tailor-web-5.jpg">
+  <p class="price">₹40,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/Cx1Wx4vt/web-tailor-sufi-6.jpg">
+  <p class="price">₹5,5000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/029TLv7z/web-tailor-sufi-5.jpg">
+  <p class="price">₹5,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/Fz0hGx5Q/web-tailor-sufi-2.jpg">
+  <p class="price">₹40,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/9QgHdkRz/web-tailor-sufi-3.jpg">
+  <p class="price">₹30,000</p>
+</div>
+
+<div class="gallery-item">
+  <img src="https://i.postimg.cc/L5pc4KwK/webs-tailor-sufi-4.jpg">
+  <p class="price">₹45,000</p>
+</div>
+</section>
+
+
+<marquee>Sufi Brother’s • Custom Designs • Perfect Fit • Order on WhatsApp</marquee>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+<h2 class="section-title">What Clients Say</h2>
+<div class="grid">
+<div class="card testimonial">“Absolutely the best tailoring experience I’ve ever had.”</div>
+<div class="card testimonial">“Perfect fit, premium fabrics, and unmatched elegance.”</div>
+<div class="card testimonial">“Felt like royalty wearing my bespoke suit.”</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Your Perfect Suit Awaits</h2>
+<a href="https://wa.me/919958486820" target="_blank">
+<button class="btn">Book on WhatsApp</button>
+</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Us</h2>
+<p>📞 +91 9958486820</p>
+<p>📍 Delhi NCR, Gurugram, India</p>
+<p>Email: <a href="mailto:sufibrothers.tailor@gmail.com">sufibrothers.tailor@gmail.com</a></p>
+
+    <img src="https://i.postimg.cc/x846kZzg/web-tailor-sufi.jpg" width="120" style="border-radius:50%; margin-bottom:15px;">
+
+
+<a href="https://mail.google.com/mail/?view=cm&to=sufibrothers.tailor@gmail.com" class="whatsapp-btn">
+  Email Us
+</a>
+<a href="https://wa.me/9958486820" target="_blank">
+<button class="btn">Chat on WhatsApp</button>
+</a>
+</section>
+
+<footer>
+© 2026 Sufi Brother's.l. All rights reserved.
+</footer>
+
+</body>
+</html>
