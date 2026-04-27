@@ -370,7 +370,44 @@ section {
 .video-thumb:hover {
   transform: scale(1.02);
 }
+ 
+header .profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
+.fabric {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.fabric-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.fabric-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.video-thumb {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-thumb:hover {
+  transform: scale(1.02);
+}
 
 </style>
 </head>
@@ -495,6 +532,32 @@ At Sufi Brother's, we redefine elegance through precision craftsmanship and pers
 </div>
 </section>
 
+<section class="fabric">
+  <h2>Our Fabric Collection</h2>
+
+  <div class="fabric-gallery">
+
+    <img src="https://i.postimg.cc/L8FChMxn/sufi-fab-1.jpg">
+    <img src="https://i.postimg.cc/fWtQ9DfY/sufi-fab-3.jpg">
+    <img src="https://i.postimg.cc/KYvdv2YS/sufi-fab4.jpg">
+    <img src="https://i.postimg.cc/KYvdv2YS/sufi-fab4.jpg">
+    <img src="https://i.postimg.cc/3rs5jVtn/sufi-fab-5.jpg">
+    <img src="https://i.postimg.cc/hjNwrQ1v/sufi-fab-6.jpg">
+    <img src="https://i.postimg.cc/HswKwxcW/sufi-fab-7.jpg">
+    <img src="https://i.postimg.cc/7LWQHJc1/sufi-fab-8.jpg">
+    <img src="https://i.postimg.cc/V60ZdLQV/sufi-fab-9.jpg">
+    <img src="https://i.postimg.cc/c4SkLSD5/sufi-fab-10.jpg">
+
+    
+
+  </div>
+
+  <!-- VIDEO (SAFE THUMBNAIL METHOD) -->
+  <a href="https://youtube.com/shorts/AEnA25LlCUI" target="_blank" class="video-box">
+    <img src="https://img.youtube.com/vi/AEnA25LlCUI/maxresdefault.jpg" class="video-thumb">
+  </a>
+
+</section>
 <!-- PROCESS -->
  
 <section class="process">
