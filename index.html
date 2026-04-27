@@ -337,6 +337,41 @@ section {
   margin: 20px auto 0;
   border-radius: 12px;
 }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 90%;
+  max-width: 400px;
+  height: 220px;
+  border-radius: 12px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.video-thumb {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-thumb:hover {
+  transform: scale(1.02);
+}
+
+
 </style>
 </head>
 
@@ -428,10 +463,26 @@ At Sufi Brother's, we redefine elegance through precision craftsmanship and pers
     <img src="https://i.postimg.cc/6pcJtLkY/web-tailor-sufi-11.jpg">
 
   </div>
- <a href="https://youtu.be/gW47WTXsrh4" target="_blank">
-  <img src="https://img.youtube.com/vi/gW47WTXsrh4/0.jpg" class="video-thumb">
-</a>
+
+
+  
+
+  <div class="video-container">
+
+    <!-- VIDEO 1 -->
+    <a href="https://youtube.com/shorts/aHo4N7niMuQ" target="_blank" class="video-box">
+      <img src="https://img.youtube.com/vi/aHo4N7niMuQ/maxresdefault.jpg" class="video-thumb">
+    </a>
+
+    <!-- VIDEO 2 -->
+    <a href="https://youtube.com/shorts/o0IQ4X6rmyc" target="_blank" class="video-box">
+      <img src="https://img.youtube.com/vi/o0IQ4X6rmyc/maxresdefault.jpg" class="video-thumb">
+    </a>
+
+  </div>
 </section>
+
+  
 
 <!-- WHY -->
 <section class="why">
